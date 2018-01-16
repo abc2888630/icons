@@ -1,131 +1,121 @@
 	<!DOCTYPE html>
-	<html>
-	<head>
-		<title></title>
-	</head>
-	<body>
-		<div class="content"><span class="search codeicon"></span></div>
-		<div class="content">
-			<span id="round"><p class="money icon"><i></i></p></span>
-		</div>
-		<div class="marker"><em></em></div>
-	</body>
-	<style type="text/css">
-	.content{
-		width: 50px;
-		height: 50px;
-		border: 1px solid black;
-		margin: 2px;
-		text-align: center;;
-		display: inline-block;
-	}
-	.search.codeicon{
-		color: #1dde5f;
-		position: absolute;
-		margin-top: 2px;
-		margin-left: 3px;
-		width: 16px;
-		height: 16px;
-		border: 2px solid currentColor;
-		border-radius: 100%;
-		-webkit-transform:rotate(-45deg);
-		transform: rotate(-45deg);
-	}
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="content"><span class="search codeicon"></span></div>
+  <div class="content"><span id="round"><p  class="money icon"><i></i></p></span></div>
+  <div class="marker"><em></em></div>
+</body>
+<style type="text/css">
+.content{
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  margin: 2px;
+  text-align: center;
+  display: inline-block;
+}
+.search.codeicon {
+  color: #1dde5f;
+  position: absolute;
+  margin-top: 2px;
+  margin-left: 3px;
+  width: 16px;
+  height: 16px;
+  border: solid 2px currentColor;
+  border-radius: 100%;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.codeicon {
 
-	.codeicon{
+}
+.codeicon:before {
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  left: 5px;
+  top: 5px;
+  border-left: solid 2px currentColor;
+  border-top: solid 2px currentColor;
+}
 
-	}
-	.codeicon:before{
-		content: "";
-		position: absolute;;
-		width: 7px;
-		height: 7px;
-		left: 5px;
-		top: 5px;
-		border-left: 2px solid currentColor;
-		border-top: 2px solid currentColor;
-	}
+#round{
+  color: #1dde5f;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: solid 2px currentColor;
+  border-radius: 100%;
+}
+.money.icon {
+  color: #1dde5f;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 1px;
+  width: 6px;
+  height: 6px;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.money.icon:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: -1px;
+  height: 15px;
+  width: 1px;
+  background-color: currentColor;
+  transform: rotate(-45deg);
+}
 
-	#round{
-		color: #1dde5f;
-		position: absolute;
-		width: 30px;
-		height: 30px;
-		margin-top: 25px;
-		margin-left: 25px;
-		border: 2px solid currentColor;
-		border-radius: 100%;
-	}
-
-	.money.icon{
-		color: #1dde5f;
-		position: absolute;
-		margin-top: 1px;
-		margin-left: 10px;
-		width: 6px;
-		height: 6px;
-		border-bottom: 1px solid currentColor;
-		border-left:  1px solid currentColor;
-		-webkit-transform:rotate(-45deg);
-		transform: rotate(-45deg);
-	}
-
-	.money.icon:before{
-		content: "";
-		position: absolute;;
-		width: 15px;
-		height: 1px;
-		left: -1px;
-		top: 0px;
-		border-color: currentColor;
-		-webkit-transform:rotate(-45deg);
-		transform: rotate(-45deg);
-	}
-
-	.money.icon i{
-		position: absolute;
-		left:-8px;
-		top:5px;
-		-webkit-transform:rotate(45deg);
-		transform: rotate(45deg);
-	}
-	.money.icon i:before{
-		content: "";
-		position: absolute;
-		width: 12px;
-		height: 1px;
-		border-color: currentColor;
-	}
-	.money.icon i:after{
-		content: "";
-		position: absolute;
-		width: 12px;
-		height: 1px;
-		border-color: currentColor;
-		-webkit-transform:rotate(90deg);
-		transform: rotate(90deg);
-	}
-
-	.marker{
-		background-color: rgba(28,123,210,0.5);
-		text-align: center;
-		color: white;
-		width: 100px;
-		height: 60px;
-		font-size: 1px;
-		line-height: 30px;
-	}
-
-	.marker em{
-		display: block;
-		border-width: 8px;
-		position: absolute;
-		top:128px;
-		left: 46px;
-		border-style: solid dashed dashed;
-		border-color: rgba(28, 123,210,0.5) transparent transparent;
-		font-size: 0;
-		line-height: 0;
-	}
-	</style>
-	</html>
+.money.icon i {
+  position: absolute;
+  left: -8px;
+  top: 5px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.money.icon i:before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: currentColor;
+}
+.money.icon i:after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.marker{
+    background-color: rgba(28, 123, 210, 0.5);
+    text-align: center;
+    color: white;
+    width: 100px;
+    height: 60px;
+    font-size: 1px;
+    line-height: 30px;
+}
+.marker em{
+    display: block;
+    border-width: 8px;
+    position: absolute;
+    top: 128px;
+    left: 46px;
+    border-style: solid dashed dashed;
+    border-color: rgba(28, 123, 210, 0.5) transparent transparent;
+    font-size: 0;
+    line-height: 0;
+}
+</style>
+</html>
